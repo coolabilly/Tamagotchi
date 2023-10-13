@@ -2,6 +2,7 @@ import java.util.*;
 
 //Attributes
 public class Tamagotchi {
+    
     private int hunger;
     private int boredom;
     private List<String> words = new ArrayList<String>(Arrays.asList("Cutie", "How are you?", "Friend", "Wanna play?", "Hello"));
