@@ -1,15 +1,19 @@
 
 import java.util.*;
 
-
+//Creates a random math question, if answered right give user money
 public class Questions {
     //Attributes
     int money = 100;
     private Random generator = new Random();
+
+    //List of questions
     private List<String> questions = new ArrayList<String>(Arrays.asList("4+4?", "17+22", "2+7", "13+4", "22+2", "26-4", "7-2", "18/6", "5*5", "11-10", "7+6", "18-2?", "8/2"));
+    //List of answers
     private List<String> answers = new ArrayList<String>(Arrays.asList("8", "39", "9", "17?", "24", "22", "5", "3", "25", "1", "13", "16", "4"));
 
     //Methods
+    //Prints out a random math question, if user answers right, user get money
     public void randomQuestion() {
         int random = generator.nextInt(3);
         System.out.println("\nAnswer this easy math question for 10 dollars: " + (questions.get(random)));
